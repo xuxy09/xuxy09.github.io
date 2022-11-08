@@ -1,8 +1,0 @@
-I am a research scientist at Sea AI Lab. My research interest lies at the intersection of Image Processing, Computer Vision, and Machine Learning. 
-In particular, my work focuses on understanding different aspects of visual information in images and videos, including texture, resolution, color, 
-motion, depth, geometry, illumination, etc., and developing algorithms to reconstruct and enhance them.
-
-I did my postdoc at Carnegie Mellon University and Massachusetts Institute of Technology. I was a research fellow at Nanyang Technological University. 
-I got the B.Eng and Ph.D. degrees in the Department of Electronic Engineering at Tsinghua University. I received my B.Ec degree in the National School 
-of Development at Peking University. I was a visiting scholar at University of California, Merced and Harvard University. I am an Area Chair of CVPR 2023 
-and have served on the Senior Program Committees of AAAI 2023 and IJCAI 2021.

@@ -16,7 +16,7 @@
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
+            <td style="padding:2.5%;width:68%;vertical-align:middle">
               <p style="text-align:center">
                 <name>Xiangyu Xu</name>
               </p>
@@ -24,12 +24,12 @@
               </p>
               <p>
                 I've worked on <a href="https://arxiv.org/abs/2102.01579">RawSR</a>, <a href="https://arxiv.org/abs/1911.00627">QVI</a>, <a href="https://arxiv.org/abs/2103.06498">RSC-Net</a>, and <a href="https://arxiv.org/abs/2109.02563">Texformer</a>. 
-                I got my bachelor and PhD degrees at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>. 
-                I did my postdoc at <a href="https://www.ri.cmu.edu/">CMU</a> and <a href="https://www.mit.edu/">MIT</a>. I was a research fellow at <a href="https://www.ntu.edu.sg/">NTU</a>.
+                I got my bachelor degrees from <a href="https://www.tsinghua.edu.cn/en/">THU</a> and <a href="https://nsd.pku.edu.cn/">PKU</a>.
+                I did my PhD at <a href="https://www.tsinghua.edu.cn/en/">THU</a> and my postdoc at <a href="https://www.ri.cmu.edu/">CMU</a> and <a href="https://www.mit.edu/">MIT</a>. I was a research fellow at <a href="https://www.ntu.edu.sg/">NTU</a> and a research scientist at <a href="https://www.sensetime.com/en">SenseTime</a>.
               </p>
               <p style="text-align:center">
                 <a href="mailto:xuxiangyu2014@gmail.com">Email</a> &nbsp/&nbsp
-                <a href="data/xxy-bio.txt">Bio</a> &nbsp/&nbsp
+                <a href="data/bio.md">Bio</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=Ec5Biz4AAAAJ">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/xuxy09">Github</a>
               </p>
@@ -52,10 +52,11 @@
 
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
+          
+          <!-- ECCV22 gpnerf -->
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/gpnerf.png" alt="gpner" width="160" style="border-style: none">
+              <img src="images/eccv22gpnerf.png" alt="gpner" width="160" style="border-style: none">
             </td>
             <td width="75%" valign="middle">
               <a href="https://arxiv.org/abs/2112.04312">
@@ -71,10 +72,10 @@
             </td>
           </tr>
 
-
+          <!-- ICCV21 texformer -->
           <tr bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/texformer.png" alt="texformer" width="160" style="border-style: none">
+              <img src="images/iccv21texformer.png" alt="texformer" width="160" style="border-style: none">
             </td>
             <td width="75%" valign="middle">
               <a href="https://arxiv.org/abs/2109.02563">
@@ -86,7 +87,112 @@
               <em>ICCV</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
               <br>
               <a href="https://github.com/xuxy09/Texformer">GitHub</a>
+              |
+              <a href="https://www.mmlab-ntu.com/project/texformer/">Project</a>
               <p>We present a Transformer for 3D human texture estimation from a single image.</p>
+            </td>
+          </tr>
+
+          <!-- TIP18 deblur -->
+          <tr onmouseout="tip18deblur_stop()" onmouseover="tip18deblur_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div>
+                <div class="two" id='tip18deblur_image'>
+                  <img src='images/tip18deblur_after.png' width="160"></div>
+                <img src='images/tip18deblur_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function tip18deblur_start() {
+                  document.getElementById('tip18deblur_image').style.opacity = "1";
+                }
+
+                function tip18deblur_stop() {
+                  document.getElementById('tip18deblur_image').style.opacity = "0";
+                }
+                tip18deblur_stop()
+              </script>
+            </td>
+            <td style="width:75%;vertical-align:middle">
+              <a href="papers/tip18_deblur.pdf">
+                <papertitle>Motion Blur Kernel Estimation via Deep Learning</papertitle>
+              </a>
+              <br>
+              <strong>Xiangyu Xu</strong>, Jinshan Pan, Yu-Jin Zhang, Ming-Hsuan Yang
+              <br>
+              <em>IEEE Transactions on Image Processing (TIP)</em>, 2018
+              <br>
+              <a href="papers/tip18_deblur.pdf">Paper</a>
+              |
+              <a href="https://sites.google.com/view/xiangyuxu/deepedge_tip">Project</a>
+              <p>We present a deep neural network to extract salient edges for blind image deblurring.</p>
+            </td>
+          </tr>
+          
+          <!-- TIP18 dehaze -->
+          <tr onmouseout="tip18dehaze_stop()" onmouseover="tip18dehaze_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div>
+                <div class="two" id='tip18dehaze_image'>
+                  <img src='images/tip18dehaze_after.png' width="160"></div>
+                <img src='images/tip18dehaze_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function tip18dehaze_start() {
+                  document.getElementById('tip18dehaze_image').style.opacity = "1";
+                }
+
+                function tip18dehaze_stop() {
+                  document.getElementById('tip18dehaze_image').style.opacity = "0";
+                }
+                tip18dehaze_stop()
+              </script>
+            </td>
+            <td style="width:75%;vertical-align:middle">
+              <a href="http://forestlinma.com/welcome_files/Wenqi_Ren_Deep_Video_Dehazing_TIP_2019.pdf">
+                <papertitle>Deep Video Dehazing with Semantic Segmentation</papertitle>
+              </a>
+              <br>
+              Wenqi Ren, Jingang Zhang, <strong>Xiangyu Xu</strong>, Lin Ma, Xiaochun Cao, Gaofeng Meng, Wei Liu
+              <br>
+              <em>IEEE Transactions on Image Processing (TIP)</em>, 2018
+              <br>
+              <a href="http://forestlinma.com/welcome_files/Wenqi_Ren_Deep_Video_Dehazing_TIP_2019.pdf">Paper</a>
+              <p>We exploit a neural network to perform haze removal for videos.</p>
+            </td>
+          </tr>
+          
+          <!-- ICCV17 -->
+          <tr onmouseout="iccv17scgan_stop()" onmouseover="iccv17scgan_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='iccv17scgan_image'>
+                  <img src='images/iccv17scgan_after.png' width="160"></div>
+                <img src='images/iccv17scgan_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function iccv17scgan_start() {
+                  document.getElementById('iccv17scgan_image').style.opacity = "1";
+                }
+
+                function iccv17scgan_stop() {
+                  document.getElementById('iccv17scgan_image').style.opacity = "0";
+                }
+                iccv17scgan_stop()
+              </script>
+            </td>
+            <td style="width:75%;vertical-align:middle">
+              <a href="https://faculty.ucmerced.edu/mhyang/papers/iccv2017_gan_super_deblur.pdf">
+                <papertitle>Learning to Super-Resolve Blurry Face and Text Images</papertitle>
+              </a>
+              <br>
+              <strong>Xiangyu Xu</strong>, Deqing Sun, Jinshan Pan, Yu-Jin Zhang, Hanspeter Pfister, Ming-Hsuan Yang
+              <br>
+              <em>ICCV</em>, 2017 
+              <br>
+              <a href="https://faculty.ucmerced.edu/mhyang/papers/iccv2017_gan_super_deblur.pdf">Paper</a>
+              |
+              <a href="https://sites.google.com/view/xiangyuxu/deblursr_iccv17">Project</a>
+              <p>We present the first deep neural network for blind image super-resolution.</p>
             </td>
           </tr>
 
