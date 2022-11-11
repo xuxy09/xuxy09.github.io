@@ -73,9 +73,23 @@
           </tr>
 
           <!-- ICCV21 texformer -->
-          <tr bgcolor="#ffffd0">
+          <tr onmouseout="iccv21tex_stop()" onmouseover="iccv21tex_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/iccv21texformer.png" alt="texformer" width="160" style="border-style: none">
+              <div>
+                <div class="two" id='iccv21tex_image'>
+                  <img src='images/iccv21tex_after.gif' height="160"></div>
+                <img src='images/iccv21tex_before.png' height="160">
+              </div>
+              <script type="text/javascript">
+                function iccv21tex_start() {
+                  document.getElementById('iccv21tex_image').style.opacity = "1";
+                }
+
+                function iccv21tex_stop() {
+                  document.getElementById('iccv21tex_image').style.opacity = "0";
+                }
+                iccv21tex_stop()
+              </script>
             </td>
             <td width="75%" valign="middle">
               <a href="https://arxiv.org/abs/2109.02563">
@@ -90,6 +104,73 @@
               |
               <a href="https://www.mmlab-ntu.com/project/texformer/">Project</a>
               <p>We present a Transformer for 3D human texture estimation from a single image.</p>
+            </td>
+          </tr>
+          
+          <!-- ECCV18 rendering -->
+          <tr onmouseout="eccv18render_stop()" onmouseover="eccv18render_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="center">
+                <div class="two" id='eccv18render_image'>
+                  <img src='images/eccv18dof_after.png' width="120"></div>
+                <img src='images/eccv18dof_before.png' width="120">
+              </div>
+              <script type="text/javascript">
+                function eccv18render_start() {
+                  document.getElementById('eccv18render_image').style.opacity = "1";
+                }
+
+                function eccv18render_stop() {
+                  document.getElementById('eccv18render_image').style.opacity = "0";
+                }
+                eccv18render_stop()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Xiangyu_Xu_Rendering_Portraitures_from_ECCV_2018_paper.pdf">
+                <papertitle>Rendering Portraitures from Monocular Camera and Beyond</papertitle>
+              </a>
+              <br>
+              <strong>Xiangyu Xu</strong>, Deqing Sun, Sifei Liu, Wenqi Ren, Yu-Jin Zhang, Ming-Hsuan Yang, Jian Sun
+              <br>
+              <em>ECCV</em>, 2018 
+              <br>
+              <a href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Xiangyu_Xu_Rendering_Portraitures_from_ECCV_2018_paper.pdf">Paper</a>
+              <p>We present a CRF-based pipeline and a deep neural filter for rendering shallow depth-of-field effect with monocular camera.</p>
+            </td>
+          </tr>
+
+          <!-- ECCV18 monocular depth -->
+          <tr onmouseout="eccv18mono_stop()" onmouseover="eccv18mono_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div >
+                <div class="two" id='eccv18mono_image'>
+                  <img src='images/eccv18mono_after.png' width="160"></div>
+                <img src='images/eccv18mono_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function eccv18mono_start() {
+                  document.getElementById('eccv18mono_image').style.opacity = "1";
+                }
+
+                function eccv18mono_stop() {
+                  document.getElementById('eccv18mono_image').style.opacity = "0";
+                }
+                eccv18mono_stop()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <br />
+              <a href="https://openaccess.thecvf.com/content_ECCV_2018/papers/YuKang_Gan_Monocular_Depth_Estimation_ECCV_2018_paper.pdf">
+                <papertitle>Monocular Depth Estimation with Affinity, Vertical Pooling and Label Enhancement</papertitle>
+              </a>
+              <br>
+              Yukang Gan*, <strong>Xiangyu Xu</strong>*, Wenxiu Sun, Liang Lin
+              <br>
+              <em>ECCV</em>, 2018 
+              <br>
+              <a href="https://openaccess.thecvf.com/content_ECCV_2018/papers/YuKang_Gan_Monocular_Depth_Estimation_ECCV_2018_paper.pdf">Paper</a>
+              <p>We propose to incorporate relative features, i.e., affinity, for monocular depth estimation.</p>
             </td>
           </tr>
 
@@ -152,7 +233,7 @@
                 <papertitle>Deep Video Dehazing with Semantic Segmentation</papertitle>
               </a>
               <br>
-              Wenqi Ren, Jingang Zhang, <strong>Xiangyu Xu</strong>, Lin Ma, Xiaochun Cao, Gaofeng Meng, Wei Liu
+              Wenqi Ren*, Jingang Zhang*, <strong>Xiangyu Xu</strong>*, Lin Ma, Xiaochun Cao, Gaofeng Meng, Wei Liu
               <br>
               <em>IEEE Transactions on Image Processing (TIP)</em>, 2018
               <br>

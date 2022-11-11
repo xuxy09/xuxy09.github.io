@@ -129,3 +129,10 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.center {
+  margin: auto;
+  width: 80%;
+  /* border: 3px solid #73AD21; */
+  /* padding: 10px; */
+}
