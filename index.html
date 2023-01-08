@@ -54,9 +54,23 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
           <!-- ECCV22 gpnerf -->
-          <tr>
+          <tr onmouseout="gpnerf_stop()" onmouseover="gpnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/eccv22gpnerf.png" alt="gpner" width="160" style="border-style: none">
+              <div class="one">
+                <div class="two" id='gpnerf_image'>
+                  <img src='images/eccv22gpnerf_after_119.gif' height="160"></div>
+                <img src='images/eccv22gpnerf_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function gpnerf_start() {
+                  document.getElementById('gpnerf_image').style.opacity = "1";
+                }
+
+                function gpnerf_stop() {
+                  document.getElementById('gpnerf_image').style.opacity = "0";
+                }
+                gpnerf_stop()
+              </script>
             </td>
             <td width="75%" valign="middle">
               <a href="https://arxiv.org/abs/2112.04312">
