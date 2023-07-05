@@ -30,8 +30,9 @@
               <p style="text-align:center">
                 <a href="mailto:xuxiangyu2014@gmail.com">Email</a> &nbsp/&nbsp
                 <a href="data/bio.md">Bio</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=Ec5Biz4AAAAJ">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/xuxy09">Github</a>
+                <a href="https://scholar.google.com/citations?user=Ec5Biz4AAAAJ">Google Scholar</a> 
+                <!-- &nbsp/&nbsp -->
+                <!-- <a href="https://github.com/xuxy09">Github</a> -->
               </p>
             </td>
             <td style="padding:2.5%;width:20%;max-width:40%">
@@ -53,6 +54,41 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
+          <!-- PAMI22 GLEAN -->
+          <tr onmouseout="pami22glean_stop()" onmouseover="pami22glean_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div >
+                <div class="two" id='pami22glean_image'>
+                  <img src='images/pami22glean_after.png' width="160"></div>
+                <img src='images/pami22glean_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function pami22glean_start() {
+                  document.getElementById('pami22glean_image').style.opacity = "1";
+                }
+
+                function pami22glean_stop() {
+                  document.getElementById('pami22glean_image').style.opacity = "0";
+                }
+                pami22glean_stop()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/pdf/2207.14812.pdf">
+                <papertitle>GLEAN: Generative Latent Bank for Image Super-Resolution and Beyond</papertitle>
+              </a>
+              <br>
+              Kelvin C.K. Chan, <strong>Xiangyu Xu</strong>, Xintao Wang, Jinwei Gu, and Chen Change Loy
+              <br>
+              <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (<strong>TPAMI</strong>)</em>, 2022
+              <br>
+              <a href="https://arxiv.org/pdf/2207.14812.pdf">Paper</a>
+              |
+              <a href="https://github.com/open-mmlab/mmediting">Code</a>
+              <p>We develop a lighter version of GLEAN.</p>
+            </td>
+          </tr>
+
           <!-- ECCV22 gpnerf -->
           <tr onmouseout="gpnerf_stop()" onmouseover="gpnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -77,12 +113,119 @@
                 <papertitle>Geometry-Guided Progressive NeRF for Generalizable and Efficient Neural Human Rendering</papertitle>
               </a>
               <br>
-              Mingfei Chen, Jianfeng Zhang, <strong>Xiangyu Xu</strong>, Lijuan Liu, Yujun Cai, Jiashi Feng, Shuicheng Yan
+              Mingfei Chen, Jianfeng Zhang, <strong>Xiangyu Xu <sup>&#x2709</sup></strong>, Lijuan Liu, Yujun Cai, Jiashi Feng, Shuicheng Yan
               <br>
               <em><strong>ECCV</strong></em>, 2022
               <br>
-              <a href="https://github.com/sail-sg/GP-Nerf">GitHub</a>
+              <a href="https://arxiv.org/abs/2112.04312">Paper</a>
+              |
+              <a href="https://github.com/sail-sg/GP-Nerf">Code</a>
               <p>We present an SMPL-based NeRF for multi-view human synthesis, which is efficient and generalizable to unseen subjects and sparse views.</p>
+            </td>
+          </tr>
+
+          <!-- CVPR22 VFIT -->
+          <tr onmouseout="cvpr22vfit_stop()" onmouseover="cvpr22vfit_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div >
+                <div class="two" id='cvpr22vfit_image'>
+                  <img src='images/cvpr22vfit_after.gif' width="160"></div>
+                <img src='images/cvpr22vfit_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function cvpr22vfit_start() {
+                  document.getElementById('cvpr22vfit_image').style.opacity = "1";
+                }
+
+                function cvpr22vfit_stop() {
+                  document.getElementById('cvpr22vfit_image').style.opacity = "0";
+                }
+                cvpr22vfit_stop()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/abs/2111.12704">
+                <papertitle>Video Frame Interpolation Transformer</papertitle>
+              </a>
+              <br>
+              Zhihao Shi*, <strong>Xiangyu Xu*<sup>&#x2709</sup></strong>, Xiaohong Liu, Jun Chen, Ming-Hsuan Yang
+              <br>
+              <em><strong>CVPR</strong></em>, 2022
+              <br>
+              <a href="https://arxiv.org/abs/2111.13817">Paper</a>
+              |
+              <a href="https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer">Code</a>
+              <p>We present the first Transformer architecture for video frame interpolation.</p>
+            </td>
+          </tr>
+
+          <!-- CVPR22 Real -->
+          <tr onmouseout="cvpr22real_stop()" onmouseover="cvpr22real_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div >
+                <div class="two" id='cvpr22real_image'>
+                  <img src='images/cvpr22real_after.png' width="160"></div>
+                <img src='images/cvpr22real_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function cvpr22real_start() {
+                  document.getElementById('cvpr22real_image').style.opacity = "1";
+                }
+
+                function cvpr22real_stop() {
+                  document.getElementById('cvpr22real_image').style.opacity = "0";
+                }
+                cvpr22real_stop()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/abs/2111.12704">
+                <papertitle>Investigating Tradeoffs in Real-World Video Super-Resolution</papertitle>
+              </a>
+              <br>
+              Kelvin C.K. Chan, Shangchen Zhou, <strong>Xiangyu Xu</strong>, and Chen Change Loy
+              <br>
+              <em><strong>CVPR</strong></em>, 2022
+              <br>
+              <a href="https://arxiv.org/abs/2111.12704">Paper</a>
+              |
+              <a href="https://github.com/ckkelvinchan/RealBasicVSR">Code</a>
+              <p>Several useful techniques for real-world video super-resolution.</p>
+            </td>
+          </tr>
+
+          <!-- CVPR22 basicvsr++ -->
+          <tr onmouseout="cvpr22basic_stop()" onmouseover="cvpr22basic_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div >
+                <div class="two" id='cvpr22basic_image'>
+                  <img src='images/cvpr22basic_after.png' width="160"></div>
+                <img src='images/cvpr22basic_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function cvpr22basic_start() {
+                  document.getElementById('cvpr22basic_image').style.opacity = "1";
+                }
+
+                function cvpr22basic_stop() {
+                  document.getElementById('cvpr22basic_image').style.opacity = "0";
+                }
+                cvpr22basic_stop()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/abs/2104.13371">
+                <papertitle>BasicVSR++: Improving Video Super-Resolution with Enhanced Propagation and Alignment</papertitle>
+              </a>
+              <br>
+              Kelvin C.K. Chan, Shangchen Zhou, <strong>Xiangyu Xu</strong>, and Chen Change Loy
+              <br>
+              <em><strong>CVPR</strong></em>, 2022
+              <br>
+              <a href="https://arxiv.org/abs/2104.13371">Paper</a>
+              |
+              <a href="https://ckkelvinchan.github.io/projects/BasicVSR++/">Project</a>
+              <p>Winner algorithm for video enhancement challenges in NTIRE 2021.</p>
             </td>
           </tr>
 
@@ -114,7 +257,9 @@
               <br>
               <em><strong>ICCV</strong></em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
               <br>
-              <a href="https://github.com/xuxy09/Texformer">GitHub</a>
+              <a href="https://arxiv.org/abs/2109.02563">Paper</a>
+              |
+              <a href="https://github.com/xuxy09/Texformer">Code</a>
               |
               <a href="https://www.mmlab-ntu.com/project/texformer/">Project</a>
               <p>We present a Transformer for 3D human texture estimation from a single image.</p>
@@ -180,7 +325,7 @@
                 <papertitle>GLEAN: Generative Latent Bank for Large-Factor Image Super-Resolution</papertitle>
               </a>
               <br>
-              Kelvin C.K. Chan, XintaoWang, <strong>Xiangyu Xu</strong>, Jinwei Gu, and Chen Change Loy
+              Kelvin C.K. Chan, Xintao Wang, <strong>Xiangyu Xu</strong>, Jinwei Gu, and Chen Change Loy
               <br>
               <em><strong>CVPR</strong></em>, 2021
               <br>
@@ -196,8 +341,8 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div >
                 <div class="two" id='chi21sr_image'>
-                  <img src='images/chi21sr.png' width="160"></div>
-                <img src='images/chi21sr.png' width="160">
+                  <img src='images/chi21sr_after.gif' width="160"></div>
+                <img src='images/chi21sr_before.jpg' width="160">
               </div>
               <script type="text/javascript">
                 function chi21sr_start() {
@@ -259,12 +404,12 @@
               <a href="https://sites.google.com/view/xiangyuxu/rawsr_pami">Project</a>
               |
               <a href="https://github.com/xuxy09/RawSR">Code</a>
-              <p>We improve the RawSR network and extend it to image dehazing and depth upsampling.</p>
+              <p>We improve the RawSR architecture and extend it to image dehazing and depth upsampling.</p>
             </td>
           </tr>
 
           <!-- ECCV20 RSC-Net -->
-          <tr onmouseout="eccv20rsc_stop()" onmouseover="eccv20rsc_start()">
+          <tr onmouseout="eccv20rsc_stop()" onmouseover="eccv20rsc_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div >
                 <div class="two" id='eccv20rsc_image'>
@@ -296,7 +441,7 @@
               <a href="https://sites.google.com/view/xiangyuxu/3d_eccv20">Project</a>
               |
               <a href="https://github.com/xuxy09/RSC-Net">Code</a>
-              <p>We propose an new algorithm for 3D human shape and pose estimation that is robust to low-resolution input.</p>
+              <p>We propose a new algorithm for 3D human shape and pose estimation that is robust to low-resolution input.</p>
             </td>
           </tr>
 
@@ -401,12 +546,12 @@
               <a href="https://arxiv.org/abs/1911.00627">Paper</a>
               |
               <a href="https://github.com/xuxy09/QVI">Code</a>
-              <p>We present the first nonlinear motion model for image interpolation.</p>
+              <p>We present the first nonlinear motion model for image interpolation. The method won the Champion of AIM 2019 video interpolation challenge.</p>
             </td>
           </tr>
 
           <!-- CVPR19 RawSR -->
-          <tr onmouseout="cvpr19raw_stop()" onmouseover="cvpr19raw_start()">
+          <tr onmouseout="cvpr19raw_stop()" onmouseover="cvpr19raw_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div >
                 <div class="two" id='cvpr19raw_image'>
@@ -436,7 +581,7 @@
               <a href="https://arxiv.org/abs/1905.12156">Paper</a>
               |
               <a href="https://github.com/xuxy09/RawSR">Code</a>
-              <p>We present the first neural network for raw image based super-resolution.</p>
+              <p>We present the first neural network for raw image based super-resolution. It works quite well on real-world input.</p>
             </td>
           </tr>
           
