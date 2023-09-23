@@ -80,6 +80,41 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <!-- NIPS23 NUMCC -->
+              <tr onmouseout="nips23numcc_stop()" onmouseover="nips23numcc_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div>
+                    <div class="two" id='nips23numcc_image'>
+                      <img src='images/nips23numcc_after.gif' width="160">
+                    </div>
+                    <img src='images/nips23numcc_before.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function nips23numcc_start() {
+                      document.getElementById('nips23numcc_image').style.opacity = "1";
+                    }
+
+                    function nips23numcc_stop() {
+                      document.getElementById('nips23numcc_image').style.opacity = "0";
+                    }
+                    nips23numcc_stop()
+                  </script>
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://arxiv.org/abs/2307.09112">
+                    <papertitle>NU-MCC: Multiview Compressive Coding with Neighborhood Decoder and Repulsive UDF</papertitle>
+                  </a>
+                  <br>
+                  Stefan Lionar, <strong>Xiangyu Xu <sup>&#x2709</sup></strong>, Min Lin, Gim Hee Lee
+                  <br>
+                  <em>Conference on Neural Information Processing Systems (<strong>NeurIPS</strong>)</em>, 2023
+                  <br>
+                  <a href="https://arxiv.org/abs/2307.09112">Paper</a>
+                  |
+                  <a href="https://numcc.github.io/">Project</a>
+                  <p>We achieve new SOTA for single-view 3D reconstruction on CO3D.</p>
+                </td>
+              </tr>
 
               <!-- TOG23 Sewformer -->
               <tr onmouseout="tog23sewformer_stop()" onmouseover="tog23sewformer_start()" bgcolor="#ffffd0">
