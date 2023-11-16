@@ -81,6 +81,83 @@
           <table
             style="width:100%;border:1px;border-spacing:1px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+              <!-- arXiv23 Instant3D -->
+              <tr onmouseout="arxiv23instant3d_stop()" onmouseover="arxiv23instant3d_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div>
+                      <div class="two" id='arxiv23instant3d_image'><video  width=100% height=100% muted autoplay loop>
+                        <source src="images/arxiv23instant3d_after.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video></div>
+                      <!-- <img src='images/arxiv23instant3d_after.mp4' width="160"> -->
+                    <img src='images/arxiv23instant3d_before.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function arxiv23instant3d_start() {
+                      document.getElementById('arxiv23instant3d_image').style.opacity = "1";
+                    }
+
+                    function arxiv23instant3d_stop() {
+                      document.getElementById('arxiv23instant3d_image').style.opacity = "0";
+                    }
+                    arxiv23instant3d_stop()
+                  </script>
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="http://arxiv.org/abs/2311.08403">
+                    <papertitle>Instant3D: Instant Text-to-3D Generation</papertitle>
+                  </a>
+                  <br>
+                  Ming Li, Pan Zhou, Jia-Wei Liu, Jussi Keppo, Min Lin, Shuicheng Yan, <strong>Xiangyu Xu<sup>&#x2709</sup></strong>
+                  <br>
+                  <em>arXiv</em>, 2023
+                  <br>
+                  <a href="http://arxiv.org/abs/2311.08403">Paper</a>
+                  |
+                  <a href="https://ming1993li.github.io/Instant3DProj/">Project</a>
+                  <p>Text-to-3D generation without per-prompt training, taking only under a second.</p>
+                </td>
+              </tr>
+
+              <!-- arXiv23 progressive -->
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div>
+                      <!-- <div class="two" id='arxiv23progressive_image'><video  width=100% height=100% muted autoplay loop>
+                        <source src="images/arxiv23progressive_after.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video></div> -->
+                      <!-- <img src='images/arxiv23progressive_after.mp4' width="160"> -->
+                    <img src='images/arxiv23progressive.png' width="160">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    function arxiv23progressive_start() {
+                      document.getElementById('arxiv23progressive_image').style.opacity = "1";
+                    }
+
+                    function arxiv23progressive_stop() {
+                      document.getElementById('arxiv23progressive_image').style.opacity = "0";
+                    }
+                    arxiv23progressive_stop()
+                  </script> -->
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://arxiv.org/abs/2309.14600">
+                    <papertitle>Progressive Text-to-3D Generation for Automatic 3D Prototyping</papertitle>
+                  </a>
+                  <br>
+                  Han Yi, Zhedong Zheng, <strong>Xiangyu Xu</strong>, Tat-seng Chua
+                  <br>
+                  <em>arXiv</em>, 2023
+                  <br>
+                  <a href="https://arxiv.org/abs/2309.14600">Paper</a>
+                  |
+                  <a href="https://github.com/Texaser/MTN">Project</a>
+                  <p>A progressive strategy that learns text-to-3D in a coarse-to-fine manner</p>
+                </td>
+              </tr>
+
               <!-- NIPS23 NUMCC -->
               <tr onmouseout="nips23numcc_stop()" onmouseover="nips23numcc_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -106,7 +183,7 @@
                     <papertitle>NU-MCC: Multiview Compressive Coding with Neighborhood Decoder and Repulsive UDF</papertitle>
                   </a>
                   <br>
-                  Stefan Lionar, <strong>Xiangyu Xu <sup>&#x2709</sup></strong>, Min Lin, Gim Hee Lee
+                  Stefan Lionar, <strong>Xiangyu Xu<sup>&#x2709</sup></strong>, Min Lin, Gim Hee Lee
                   <br>
                   <em>Conference on Neural Information Processing Systems (<strong>NeurIPS</strong>)</em>, 2023
                   <br>
@@ -243,7 +320,7 @@
                     </papertitle>
                   </a>
                   <br>
-                  Mingfei Chen, Jianfeng Zhang, <strong>Xiangyu Xu <sup>&#x2709</sup></strong>, Lijuan Liu, Yujun Cai,
+                  Mingfei Chen, Jianfeng Zhang, <strong>Xiangyu Xu<sup>&#x2709</sup></strong>, Lijuan Liu, Yujun Cai,
                   Jiashi Feng, Shuicheng Yan
                   <br>
                   <em>European Conference on Computer Vision (<strong>ECCV</strong>)</em>, 2022
