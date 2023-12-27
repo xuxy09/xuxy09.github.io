@@ -82,6 +82,42 @@
             style="width:100%;border:1px;border-spacing:1px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <!-- TPAMI23 smpler -->
+              <tr onmouseout="tpami23smpler_stop()" onmouseover="tpami23smpler_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div>
+                    <div class="two" id='tpami23smpler_image'>
+                      <img src='images/tpami23smpler_after.png' width="160">
+                    </div>
+                    <img src='images/tpami23smpler_before.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function tpami23smpler_start() {
+                      document.getElementById('tpami23smpler_image').style.opacity = "1";
+                    }
+
+                    function tpami23smpler_stop() {
+                      document.getElementById('tpami23smpler_image').style.opacity = "0";
+                    }
+                    tpami23smpler_stop()
+                  </script>
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="">
+                    <papertitle>SMPLer: Taming Transformers for Monocular 3D Human Shape and Pose Estimation</papertitle>
+                  </a>
+                  <br>
+                  <strong>Xiangyu Xu</strong>, Lijuan Liu, Shuicheng Yan
+                  <br>
+                  <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (<strong>TPAMI</strong>)</em>, 2023
+                  <br>
+                  <a href="">Paper</a>
+                  |
+                  <a href="">Project</a>
+                  <p>We propose a very simple Transformer for 3D human shape and pose estimation from a single image, which achieves SOTA accuracy with high efficiency in parameter and computation.</p>
+                </td>
+              </tr>
+
               <!-- arXiv23 Instant3D -->
               <tr onmouseout="arxiv23instant3d_stop()" onmouseover="arxiv23instant3d_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
