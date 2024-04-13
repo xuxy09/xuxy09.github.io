@@ -81,6 +81,109 @@
           <table
             style="width:100%;border:1px;border-spacing:1px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <!-- arxiv24 gooddrag -->
+              <tr onmouseout="arxiv24gooddrag_stop()" onmouseover="arxiv24gooddrag_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div>
+                    <div class="two" id='arxiv24gooddrag_image'>
+                      <img src='images/arxiv24gooddrag_after.gif' width="160">
+                    </div>
+                    <img src='images/arxiv24gooddrag_before.jpeg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function arxiv24gooddrag_start() {
+                      document.getElementById('arxiv24gooddrag_image').style.opacity = "1";
+                    }
+
+                    function arxiv24gooddrag_stop() {
+                      document.getElementById('arxiv24gooddrag_image').style.opacity = "0";
+                    }
+                    arxiv24gooddrag_stop()
+                  </script>
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://arxiv.org/abs/2404.07206">
+                    <papertitle>GoodDrag: Towards Good Practices for Drag Editing with Diffusion Models</papertitle>
+                  </a>
+                  <br>
+                  Zewei Zhang, Huan Liu, Jun Chen, <strong>Xiangyu Xu</strong> 
+                  <br>
+                  <em>arXiv</em>, 2024
+                  <br>
+                  <a href="https://arxiv.org/abs/2404.07206">Paper</a>
+                  |
+                  <a href="https://gooddrag.github.io/">Project</a>
+                  <p>A new framework for drag editing with diffusion models.</p>
+                </td>
+              </tr>
+
+              <!-- arxiv24 infnerf -->
+              <tr onmouseout="arxiv24infnerf_stop()" onmouseover="arxiv24infnerf_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div>
+                    <div class="two" id='arxiv24infnerf_image'>
+                      <img src='images/arxiv24infnerf.png' width="160">
+                    </div>
+                    <img src='images/arxiv24infnerf.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function arxiv24infnerf_start() {
+                      document.getElementById('arxiv24infnerf_image').style.opacity = "1";
+                    }
+
+                    function arxiv24infnerf_stop() {
+                      document.getElementById('arxiv24infnerf_image').style.opacity = "0";
+                    }
+                    arxiv24infnerf_stop()
+                  </script>
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://arxiv.org/abs/2403.14376">
+                    <papertitle>InfNeRF: Towards Infinite Scale NeRF Rendering with O(log n) Space Complexity</papertitle>
+                  </a>
+                  <br>
+                  Jiabin Liang, Lanqing Zhang, Zhuoran Zhao, <strong>Xiangyu Xu</strong> 
+                  <br>
+                  <em>arXiv</em>, 2024
+                  <br>
+                  <a href="https://arxiv.org/abs/2403.14376">Paper</a>
+                  <p>We combine Level of Detail (LoD) with NeRF.</p>
+                </td>
+              </tr>
+
+              <!-- CVPR24 deblur -->
+              <tr onmouseout="cvpr24deblur_stop()" onmouseover="cvpr24deblur_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div>
+                    <div class="two" id='cvpr24deblur_image'>
+                      <img src='images/cvpr24deblur_after.png' width="160">
+                    </div>
+                    <img src='images/cvpr24deblur_before.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function cvpr24deblur_start() {
+                      document.getElementById('cvpr24deblur_image').style.opacity = "1";
+                    }
+
+                    function cvpr24deblur_stop() {
+                      document.getElementById('cvpr24deblur_image').style.opacity = "0";
+                    }
+                    cvpr24deblur_stop()
+                  </script>
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="">
+                    <papertitle>Motion-Adaptive Separable Collaborative Filters for Blind Motion Deblurring</papertitle>
+                  </a>
+                  <br>
+                  Chengxu Liu, Xuan Wang, <strong>Xiangyu Xu</strong>, Ruhao Tian, Shuai Li, Xueming Qian, Ming-Hsuan Yang 
+                  <br>
+                  <em>Computer Vision and Pattern Recognition Conference (<strong>CVPR</strong>)</em>, 2024
+                  <br>
+                  <a href="">Paper</a>
+                  <p>Learnable filters for image deblurring.</p>
+                </td>
+              </tr>
 
               <!-- TPAMI23 smpler -->
               <tr onmouseout="tpami23smpler_stop()" onmouseover="tpami23smpler_start()">
@@ -113,7 +216,7 @@
                   <br>
                   <a href="">Paper</a>
                   |
-                  <a href="">Project</a>
+                  <a href="https://github.com/xuxy09/SMPLer">Project</a>
                   <p>We propose a very simple Transformer for 3D human shape and pose estimation from a single image, which achieves SOTA accuracy with high efficiency in parameter and computation.</p>
                 </td>
               </tr>
