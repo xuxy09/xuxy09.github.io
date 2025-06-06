@@ -127,6 +127,67 @@
           <table
             style="width:100%;border:1px;border-spacing:1px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <!-- arxiv25 dualsplat -->
+              <tr onmouseout="arxiv25dualsplat_stop()" onmouseover="arxiv25dualsplat_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div>
+                    
+                    <div class="two" id='arxiv25dualsplat_image'>
+                      
+                      <video  width=100% height=auto muted autoplay loop>
+                        <source src="images/arxiv25dualsplat.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      
+                    </div>
+                    <img src='images/arxiv25dualsplat_before.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function arxiv25dualsplat_start() {
+                      document.getElementById('arxiv25dualsplat_image').style.opacity = "1";
+                    }
+
+                    function arxiv25dualsplat_stop() {
+                      document.getElementById('arxiv25dualsplat_image').style.opacity = "0";
+                    }
+                    arxiv25dualsplat_stop()
+                  </script>
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://arxiv.org/abs/2506.03538">
+                    <papertitle>Robust Neural Rendering in the Wild with Asymmetric Dual 3D Gaussian Splatting</papertitle>
+                  </a>
+                  <br>
+                  Chengqi Li, Zhihao Shi, Yangdi Lu, Wenbo He, <strong>Xiangyu Xu</strong> 
+                  <br>
+                  <em>arXiv</em>, 2025
+                  <br>
+                  <a href="https://arxiv.org/abs/2506.03538">Paper</a>
+                  <p>3DGS in the wild with dual consistency regularization</p>
+                </td>
+              </tr>
+
+              <!-- icml25 -->
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div>
+                    <img src='images/icml25wmarkgpt.png' width="160">
+                  </div>
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://arxiv.org/abs/2506.03538">
+                    <papertitle>WMarkGPT: Watermarked Image Understanding via Multi-Modal Large Language Models</papertitle>
+                  </a>
+                  <br>
+                  Songbai Tan, Xuerui Qiu, Gang Xu, Linrui Xu, <strong>Xiangyu Xu</strong>, Huiping Zhuang, Ming Li, Fei Yu 
+                  <br>
+                  <em>International Conference on Machine Learning (<strong>ICML</strong>)</em>, 2025
+                  <br>
+                  <a href="">Paper</a>
+                  <p>Watermarked image understanding with VLM</p>
+                </td>
+              </tr>
+
               <!-- arxiv24 gooddrag -->
               <tr onmouseout="arxiv24gooddrag_stop()" onmouseover="arxiv24gooddrag_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -232,7 +293,7 @@
                   <br>
                   <em>Computer Vision and Pattern Recognition Conference (<strong>CVPR</strong>)</em>, 2024
                   <br>
-                  <a href="">Paper</a>
+                  <a href="https://arxiv.org/abs/2404.13153">Paper</a>
                   <p>Learnable filters for image deblurring.</p>
                 </td>
               </tr>
